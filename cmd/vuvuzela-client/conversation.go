@@ -19,10 +19,10 @@ import (
 	"github.com/jroimartin/gocui"
 	"golang.org/x/crypto/nacl/secretbox"
 
+	"github.com/myl7/vuvuzela/convo"
 	"vuvuzela.io/alpenhorn/errors"
 	"vuvuzela.io/alpenhorn/log"
 	"vuvuzela.io/alpenhorn/log/ansi"
-	"vuvuzela.io/vuvuzela/convo"
 )
 
 type Conversation struct {
@@ -441,9 +441,10 @@ func rollKey(currentKey *[32]byte, keyRound, targetRound uint32) *[32]byte {
 // bootstrap a convo's keywheel for forward secrecy. The sender calls
 // outgoingCallConvoRound and the receiver calls incomingCallConvoRound.
 // For 0 <= X <= roundingIncrement, the following should hold:
-//   agreedRoundSender, intent := outgoingCallConvoRound(r)
-//   agreedRoundReceiver := incomingCallConvoRound(r+X, intent)
-//   agreedRoundSender == agreedRoundReceiver
+//
+//	agreedRoundSender, intent := outgoingCallConvoRound(r)
+//	agreedRoundReceiver := incomingCallConvoRound(r+X, intent)
+//	agreedRoundSender == agreedRoundReceiver
 type roundSyncer struct {
 	roundingIncrement uint32
 }

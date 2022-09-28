@@ -18,13 +18,13 @@ import (
 
 	"golang.org/x/net/context"
 
+	"github.com/myl7/vuvuzela/convo"
+	"github.com/myl7/vuvuzela/mixnet"
 	"vuvuzela.io/alpenhorn/config"
 	"vuvuzela.io/alpenhorn/errors"
 	"vuvuzela.io/alpenhorn/log"
 	"vuvuzela.io/alpenhorn/typesocket"
 	"vuvuzela.io/concurrency"
-	"vuvuzela.io/vuvuzela/convo"
-	"vuvuzela.io/vuvuzela/mixnet"
 )
 
 // Server is the coordinator (entry) server for the

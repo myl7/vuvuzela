@@ -8,10 +8,10 @@ import (
 	"encoding/json"
 	"io/ioutil"
 
+	"github.com/myl7/vuvuzela-internal/ioutil2"
+	"github.com/myl7/vuvuzela/convo"
 	"vuvuzela.io/alpenhorn/config"
 	"vuvuzela.io/alpenhorn/errors"
-	"vuvuzela.io/internal/ioutil2"
-	"vuvuzela.io/vuvuzela/convo"
 )
 
 type persistedState struct {

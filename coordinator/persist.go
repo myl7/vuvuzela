@@ -11,7 +11,7 @@ import (
 	"io/ioutil"
 	"sync/atomic"
 
-	"vuvuzela.io/internal/ioutil2"
+	"github.com/myl7/vuvuzela-internal/ioutil2"
 )
 
 // version is the current version number of the persisted state format.

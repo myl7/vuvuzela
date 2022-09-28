@@ -8,9 +8,9 @@ import (
 	"crypto/ed25519"
 	"encoding/json"
 
+	"github.com/myl7/vuvuzela/mixnet"
 	"vuvuzela.io/alpenhorn/config"
 	"vuvuzela.io/alpenhorn/errors"
-	"vuvuzela.io/vuvuzela/mixnet"
 )
 
 // Use github.com/davidlazar/easyjson:

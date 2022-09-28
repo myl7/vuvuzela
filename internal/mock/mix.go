@@ -11,12 +11,12 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 
+	"github.com/myl7/vuvuzela/convo"
+	"github.com/myl7/vuvuzela/mixnet"
+	"github.com/myl7/vuvuzela/mixnet/convopb"
 	"vuvuzela.io/alpenhorn/edtls"
 	"vuvuzela.io/alpenhorn/log"
 	"vuvuzela.io/crypto/rand"
-	"vuvuzela.io/vuvuzela/convo"
-	"vuvuzela.io/vuvuzela/mixnet"
-	"vuvuzela.io/vuvuzela/mixnet/convopb"
 )
 
 type Mixchain struct {

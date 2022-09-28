@@ -16,11 +16,11 @@ import (
 	"github.com/davidlazar/go-crypto/encoding/base32"
 	"github.com/jroimartin/gocui"
 
+	"github.com/myl7/vuvuzela"
+	"github.com/myl7/vuvuzela/convo"
 	"vuvuzela.io/alpenhorn"
 	"vuvuzela.io/alpenhorn/log"
 	"vuvuzela.io/alpenhorn/log/ansi"
-	"vuvuzela.io/vuvuzela"
-	"vuvuzela.io/vuvuzela/convo"
 )
 
 const NumOutgoing = 5

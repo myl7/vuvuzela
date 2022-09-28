@@ -13,14 +13,14 @@ import (
 	"path/filepath"
 	"strings"
 
+	"github.com/myl7/vuvuzela/cmd/cmdconf"
+	"github.com/myl7/vuvuzela/coordinator"
+	"github.com/myl7/vuvuzela/internal/vzlog"
 	"vuvuzela.io/alpenhorn/cmd/cmdutil"
 	"vuvuzela.io/alpenhorn/config"
 	"vuvuzela.io/alpenhorn/edtls"
 	"vuvuzela.io/alpenhorn/encoding/toml"
 	"vuvuzela.io/alpenhorn/log"
-	"vuvuzela.io/vuvuzela/cmd/cmdconf"
-	"vuvuzela.io/vuvuzela/coordinator"
-	"vuvuzela.io/vuvuzela/internal/vzlog"
 )
 
 var (

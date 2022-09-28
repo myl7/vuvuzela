@@ -14,11 +14,11 @@ import (
 	"path/filepath"
 	"time"
 
+	"github.com/myl7/vuvuzela"
 	"vuvuzela.io/alpenhorn"
 	"vuvuzela.io/alpenhorn/config"
 	"vuvuzela.io/alpenhorn/errors"
 	"vuvuzela.io/alpenhorn/log"
-	"vuvuzela.io/vuvuzela"
 )
 
 var username = flag.String("username", "", "Alpenhorn username")

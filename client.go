@@ -14,13 +14,13 @@ import (
 	"github.com/davidlazar/go-crypto/encoding/base32"
 	"golang.org/x/crypto/nacl/box"
 
+	"github.com/myl7/vuvuzela/convo"
+	"github.com/myl7/vuvuzela/coordinator"
+	"github.com/myl7/vuvuzela/mixnet"
 	"vuvuzela.io/alpenhorn/config"
 	"vuvuzela.io/alpenhorn/errors"
 	"vuvuzela.io/alpenhorn/typesocket"
 	"vuvuzela.io/crypto/onionbox"
-	"vuvuzela.io/vuvuzela/convo"
-	"vuvuzela.io/vuvuzela/coordinator"
-	"vuvuzela.io/vuvuzela/mixnet"
 )
 
 type Client struct {

@@ -25,6 +25,7 @@ import (
 	"google.golang.org/grpc/peer"
 	"google.golang.org/grpc/status"
 
+	pb "github.com/myl7/vuvuzela/mixnet/convopb"
 	"vuvuzela.io/alpenhorn/edtls"
 	"vuvuzela.io/alpenhorn/errors"
 	"vuvuzela.io/alpenhorn/log"
@@ -32,7 +33,6 @@ import (
 	"vuvuzela.io/crypto/onionbox"
 	"vuvuzela.io/crypto/rand"
 	"vuvuzela.io/crypto/shuffle"
-	pb "vuvuzela.io/vuvuzela/mixnet/convopb"
 )
 
 // Use github.com/davidlazar/easyjson:
